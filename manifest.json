@@ -72,7 +72,11 @@
             "scope.userLocation" : {
                 "desc" : "有定位功能需要导航定位"
             }
-        }
+        },
+		//分包配置：步骤1 --> 启用分包优化
+		"optimization" : {
+			"subPackages" : true	//是否启用分包优化
+		}
     },
     "h5" : {
         "title" : "Do it today",
