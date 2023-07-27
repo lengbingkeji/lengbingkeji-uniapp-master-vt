@@ -69,10 +69,12 @@
 		data() {
 			return {
 			 swiperList: [
-				  {id:1,type: 'image',url: '/static/banner/banner1.png', link: ''},
-				  {id:2,type: 'image',url: '/static/banner/banner2.jpg', link: ''},
-				  {id:3,type: 'image',url: '/static/banner/banner3.jpg', link: ''},
-				  {id:4,type: 'image',url: '/static/banner/banner4.jpg', link: ''},
+				 {id:1,type: 'image',url: 'https://img.wenhairu.com/images/2021/12/17/5DzGG.jpg', link: ''},
+				 {id:1,type: 'image',url: 'https://img.wenhairu.com/images/2021/12/17/5Dj0v.jpg', link: ''},
+				  // {id:1,type: 'image',url: '/static/banner/banner1.png', link: ''},
+				  // {id:2,type: 'image',url: '/static/banner/banner2.jpg', link: ''},
+				  // {id:3,type: 'image',url: '/static/banner/banner3.jpg', link: ''},
+				  // {id:4,type: 'image',url: '/static/banner/banner4.jpg', link: ''},
 				],
 				middleApps: [
 				  {icon: 'line2_icon1.png', title: '审批', 'text': '个人审批'},
