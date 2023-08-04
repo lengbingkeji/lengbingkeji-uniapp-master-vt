@@ -136,6 +136,13 @@ const routes = [
 	        title: '编程',
 	    },
 	},
+	{
+	    path: '/packageWxzp/pages/poetry/poetryList/poetryList',
+	    name: 'poetryList',
+	    meta: {
+	        title: '诗歌',
+	    },
+	},
 	
 ]
 export default routes

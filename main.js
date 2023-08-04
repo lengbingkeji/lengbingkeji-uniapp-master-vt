@@ -67,6 +67,9 @@ Vue.component('works',works)
 import program from './pages/lbkj/program/program.vue'
 Vue.component('program',program)
 
+import poetryList from './packageWxzp/pages/poetry/poetryList/poetryList.vue'
+Vue.component('poetryList',poetryList)
+
 // import VConsole from './js_sdk/vconsole.min'
 
 //   var vConsole = new VConsole();
