@@ -6,7 +6,8 @@ if (process.env.NODE_ENV == 'development') {
 	BASE_URL = 'http://127.0.0.1:8080/lengbingkeji-boot-vt' // 开发环境
 } else {
 	//BASE_URL = 'http://boot.jeecg.org:8080/jeecg-boot' // 生产环境
-	BASE_URL = 'https://www.lengbingkeji.com/lengbingkeji-boot-vt/' // 生产环境
+	//BASE_URL = 'https://www.lengbingkeji.com:8080/lengbingkeji-boot-vt/' // 生产环境
+	BASE_URL = 'http://www.lengbingkeji.com:8080/lengbingkeji-boot-vt/' // 生产环境
 }
 let staticDomainURL = BASE_URL+ '/sys/common/static';
 

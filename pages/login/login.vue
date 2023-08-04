@@ -1,4 +1,4 @@
-  <template>
+<template>
 	<view class="zai-box">
         <scroll-view scroll-y class="page">
             <view class="text-center" :style="[{animation: 'show ' + 0.4+ 's 1'}]">
@@ -23,9 +23,16 @@
 						<button class="cu-btn bg-blue lg margin-right shadow" :loading="loading" :class="[shape=='round'?'round':'']"
 							@tap="onLogin"><text space="emsp">{{loading ? "登录中...":" 登录 "}}</text>
 						</button>
+						
 						<button class="cu-btn line-blue lg margin-left shadow" :loading="loading" :class="[shape=='round'?'round':'']"
 							@tap="loginWay=3-loginWay">短信登录
 						</button>
+						
+						<!--
+						<button class="cu-btn line-blue lg margin-left shadow" disabled :loading="loading" :class="[shape=='round'?'round':'']"
+							@tap="">注册
+						</button>
+						-->
 					</view>
 				</block>
                 <block v-else>
@@ -65,8 +72,7 @@
 			<image src="https://static.jeecg.com/upload/test/login4_1595818039175.png" mode="aspectFit" class="round"></image>
 			<view class="gray-text">登录中...</view>
 		</view>
-    </view>
-
+	</view>
 </template>
 
 <script>
@@ -77,12 +83,12 @@
     export default {
         data() {
             return {
-				shape:'',//round 圆形
+				shape:'round',//round 圆形
 				loading: false,
 				userName: 'admin',
 				password: '123456',
-				phoneNo: '',
-				smsCode: '',
+				phoneNo: '',//手机号码
+				smsCode: '',//验证码
 				showPassword: false, //是否显示明文
 				loginWay: 1, //1: 账密，2：验证码
 				smsCountDown: 0,
@@ -127,6 +133,7 @@
 		      },
 		},
         methods: {
+			//mapActions 工具函数会将 store 中的 dispatch方法映射到组件的 mathods 中
 			 ...mapActions([ "mLogin","PhoneLogin","ThirdLogin" ]),
 			onLogin: function (){
 			        if(!this.userName || this.userName.length==0){

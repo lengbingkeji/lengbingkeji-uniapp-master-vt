@@ -60,6 +60,13 @@ Vue.component('plugin',plugin)
 import cuCustom from './plugin/colorui/components/cu-custom.vue'
 Vue.component('cu-custom',cuCustom)
 
+//lbkj
+import works from './pages/lbkj/works/works.vue'
+Vue.component('works',works)
+
+import program from './pages/lbkj/program/program.vue'
+Vue.component('program',program)
+
 // import VConsole from './js_sdk/vconsole.min'
 
 //   var vConsole = new VConsole();

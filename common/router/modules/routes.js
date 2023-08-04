@@ -120,5 +120,22 @@ const routes = [
 	        title: 'helloWorld',
 	    },
 	},
+	
+	//lbkj开发新增
+	{
+	    path: '/pages/lbkj/works/works',
+	    name: 'works',
+	    meta: {
+	        title: '作品',
+	    },
+	},
+	{
+	    path: '/pages/lbkj/program/program',
+	    name: 'program',
+	    meta: {
+	        title: '编程',
+	    },
+	},
+	
 ]
 export default routes

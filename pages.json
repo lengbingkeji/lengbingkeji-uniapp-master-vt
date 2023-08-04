@@ -158,6 +158,22 @@
 		},{
 			"path": "pages/common/helloWorld",
 			"style": {}
+		},
+		
+		//lbkj
+		{
+			"path": "pages/lbkj/works/works",
+			"style": {
+				"navigationBarTitleText": "作品",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/lbkj/program/program",
+			"style": {
+				"navigationBarTitleText": "编程",
+				"enablePullDownRefresh": true
+			}
 		}
 		
 	],

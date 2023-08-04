@@ -31,25 +31,25 @@ export default new Vuex.Store({
   actions: {
     // 登录
     mLogin({ commit }, userInfo) {
-      return new Promise((resolve, reject) => {
-       api.login(userInfo).then(response => {
-          if(response.data.code ==200){ 
-            const result = response.data.result
-            const userInfo = result.userInfo
-			uni.setStorageSync(ACCESS_TOKEN,result.token);
-			uni.setStorageSync(USER_INFO,userInfo);
-            commit('SET_TOKEN', result.token)
-            commit('SET_AVATAR', userInfo.avatar)
-            commit('SET_NAME', { username: userInfo.username,realname: userInfo.realname})
-            resolve(response)
-          }else{
-            resolve(response)
-          }
-        }).catch(error => {
-			console.log("catch===>response",response)
-          reject(error)
-        })
-      })
+		return new Promise((resolve, reject) => {
+			api.login(userInfo).then(response => {
+				if(response.data.code ==200){ 
+					const result = response.data.result
+					const userInfo = result.userInfo
+					uni.setStorageSync(ACCESS_TOKEN,result.token);
+					uni.setStorageSync(USER_INFO,userInfo);
+					commit('SET_TOKEN', result.token)
+					commit('SET_AVATAR', userInfo.avatar)
+					commit('SET_NAME', { username: userInfo.username,realname: userInfo.realname})
+					resolve(response)
+				}else{
+					resolve(response)
+				}
+			}).catch(error => {
+				console.log("catch===>response",response)
+				reject(error)
+			})
+		})
     },
     //手机号登录
     PhoneLogin({ commit }, userInfo) {
