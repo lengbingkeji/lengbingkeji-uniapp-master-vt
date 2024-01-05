@@ -87,7 +87,7 @@ export const us = {
     }
 	*/
   ]
-}
+};
 
 /**
  * other server 其他服务
